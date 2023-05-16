@@ -99,6 +99,18 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     </style>
 
     
@@ -159,14 +171,22 @@
     <div class="bg-body-tertiary p-0 rounded">
       <div class="col-sm-11 py-3 mx-auto">
         <h1 class="col-sm-4 py-5 mx-auto">Shopping</h1>
-        <video src="../Assets/vids/Shopping - Made with Clipchamp.mp4" type="video/mp4" loop class="hover-to-play w-300" width="1000px" height="500px" class="display-5 fw-normal"></video>
+        <div class="video-container">
+          <iframe
+            src="../Assets/vids/Shopping.mp4"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope;"
+            allowfullscreen></iframe>
+        </div>
           <div class="col-sm-8 py-3 mx-auto"> 
-            <p>string GetName() const;</p>
-            <p>int GetPrice() const;</p> 
-            <p>int GetQuantity() const;</p> 
-            <p>void SetName(string name);</p>
-            <p>void SetPrice(int price);</p>
-            <p>void SetQuantity(int qty);</p>
+            <pre><code>
+              string GetName() const;
+              int GetPrice() const;
+              int GetQuantity() const;
+              void SetName(string name);
+              void SetPrice(int price);
+              void SetQuantity(int qty);
+            </code></pre>
             <p>I picked this code because it is important to the project as it collects the input entered by the person and collects it.</p>
         </div>
     </div>
@@ -177,7 +197,7 @@
 <footer class="text-body-secondary py-5">
   <div class=" bottom-0 end-0 me-3 e">
     <p class="float-end mb-2">
-      <a href="https://bubbat05.github.io/" class="btn btn-primary my-2">Home</a> 
+      <a href="http://127.0.0.1:5500/index.html" class="btn btn-primary my-2">Home</a> 
     </p>
   </div>
 </footer>

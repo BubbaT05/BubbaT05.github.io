@@ -93,6 +93,18 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     </style>
 
     
@@ -149,13 +161,13 @@
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
               <h4>Thomas</h4>
-              <p class="text-body-secondary">A student at Highschool.</p>
+              <h6> A student at Highschool.</h6> 
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
               <h4>Socials</h4>
               <ul class="list-unstyled">
-                <li><a href="https://twitter.com/BubbaT05" class="text-white">Follow on Twitter</a></li>
-                <li><a href="https://www.instagram.com/bubbat05/" class="text-white">Follow on Instagram</a></li>
+                <li><a href="https://twitter.com/BubbaT05"><h6>Follow on Twitter</h6></a></li>
+                <li><a href="https://www.instagram.com/bubbat05/"><h6>Follow on Instagram</h6></a></li>
               </ul>
             </div>
           </div>
@@ -184,7 +196,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
-            <video src="./Assets/vids/VR-Room - Made with Clipchamp.mp4" type="video/mp4" loop class="hover-to-play w-300" height="300px"></video>
+            <video src="./Assets/vids/VR-Room.480.mov" type="video/mp4" loop class="hover-to-play w-300"></video>
             <div class="card-body">
                 <h2>VR-Room</h2>
 
@@ -200,7 +212,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <video src="./Assets/vids/Guess A Number - Made with Clipchamp.mp4" type="video/mp4" loop class="hover-to-play w-300" height="300px"></video>
+            <video src="./Assets/vids/Guess A Number.480.mov" type="video/mp4" loop class="hover-to-play w-300"></video>
               <div class="card-body">
                 <h2>Number Guesser</h2>
                 
@@ -216,9 +228,10 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <video src="./Assets/vids/Shopping - Made with Clipchamp.mp4" type="video/mp4" loop class="hover-to-play w-300" height="300px"></video>
+            <video src="./Assets/vids/Shopping10.480.mov" type="video/mp4" loop class="hover-to-play w-300" ></video>
                 <div class="card-body">
                 <h2> Shopping Cart</h2>
+
               <p class="card-text">Add items to your shopping list and have the code add up the price for the total</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -239,7 +252,7 @@
 <footer class="text-body-secondary py-5">
   <div class="container">
     <p class="float-end mb-1">
-      <a href="https://bubbat05.github.io/" class="btn btn-primary my-2">Back to Top</a> 
+      <a href="http://127.0.0.1:5500/index.html" class="btn btn-primary my-2">Back to Top</a> 
     </p>
 
   </div>

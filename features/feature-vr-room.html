@@ -99,6 +99,20 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
     </style>
 
     
@@ -160,7 +174,13 @@
       <div class="col-sm-11 py-3 mx-auto">
         <h1 class="col-sm-4 py-5 mx-auto">VR-Room</h1>
           <div class="col-sm-8 py-3 mx-auto"> 
-            <video src="../Assets/vids/VR-Room - Made with Clipchamp.mp4" type="video/mp4" loop class="hover-to-play w-300" height="500px"></video>
+            <div class="video-container">
+              <iframe
+                src="../Assets/vids/VR-Room.mp4"
+                frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope;"
+                allowfullscreen></iframe>
+            </div>
             <p>This specific project was very enjoyable because of the ability to physically see the progress you have made.</p>
             <p>
             </p>
@@ -173,7 +193,7 @@
 <footer class="text-body-secondary py-5">
   <div class=" bottom-0 end-0 me-3 e">
     <p class="float-end mb-2">
-      <a href="https://bubbat05.github.io/" class="btn btn-primary my-2">Home</a> 
+      <a href="http://127.0.0.1:5500/index.html" class="btn btn-primary my-2">Home</a> 
     </p>
   </div>
 </footer>
